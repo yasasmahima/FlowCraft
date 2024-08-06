@@ -1,0 +1,13 @@
+dataset_path: /home/yasas/UNSW/Adv_Temporal/SceneFlow/argoverse2/preprcessed/sensor/val
+checkpoint: /home/yasas/UNSW/Adv_Temporal/SceneFlow/SceneFLow-Attack/ckpts/fastflow3d_best.ckpt
+res_name: # if None will directly be the `model_name.ckpt` in checkpoint path
+
+
+# no need to change
+defaults:
+  - hydra: default
+  - model: fastflow3d
+seed: 42069
+gpus: 1
+slurm_id: 00000
+output: ${model.name}-${slurm_id}
