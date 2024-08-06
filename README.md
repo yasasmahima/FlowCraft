@@ -22,7 +22,7 @@ Pre-trained weights for models are available in [Onedrive link](https://hkustcon
 
 - `un_attack.py`: Perform FlowCraft, PGD or CosPGD attacks using local loss (Note: Update scripts->networks->models->loss_func.py-> line 67 to `return error_back, error`)
 
-- `un_attack_global)loss.py`: Perform FlowCraft, PGD or CosPGD attacks using global loss
+- `un_attack_global_loss.py`: Perform FlowCraft, PGD or CosPGD attacks using global loss
 
 - `transfer_attack_nsfp.py` : Perform FlowCraft, PGD or CosPGD transfer attacks on NSFP (Test time optimization)
 
@@ -61,7 +61,7 @@ Note: This code base is based on https://github.com/KTH-RPL/DeFlow
 ## Cite & Acknowledgements
 
 ```
-@article{zhang2024deflow,
+@article{mahima2024flowcraft,
   author={Mahima, K.T. Yasas; Perera, Asanka; Anavatti, Sreenatha; Garratt, Matt},
   title={FlowCraft: Unveiling Adversarial Robustness of LiDAR Scene Flow Estimation},
   journal={},
